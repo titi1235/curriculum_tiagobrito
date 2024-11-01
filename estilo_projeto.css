@@ -1,0 +1,154 @@
+/* Configuração geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte geral */
+    margin: 0;                      /* Remove margens padrão */
+    padding: 0;                     /* Remove espaçamentos padrão */
+}
+
+.container {
+    width: 80%;                     /* Define largura da área principal em 80% da página */
+    margin: 80px auto 20px auto;    /* Define margens superior, inferior e laterais */
+    background: #cec9c9;            /* Cor de fundo da área principal */
+    padding: 20px;                  /* Espaçamento interno */
+    box-shadow: 0 0 10px black;     /* Adiciona sombra à área principal */
+}
+
+/* Estilo para o título fixado no topo da página */
+h1 {
+    position: fixed;                /* Fixa o título no topo da página */
+    top: 0;                         /* Define a posição no topo */
+    left: 0;                        /* Define alinhamento à esquerda */
+    width: 100%;                    /* Define largura total */
+    background-color: #fff;         /* Cor de fundo branca */
+    padding: 10px;                  /* Espaçamento interno */
+    text-align: center;             /* Centraliza o título */
+    font-size: 36px;                /* Tamanho do título */
+    color: black;                   /* Cor do título */
+    box-sizing: border-box;         /* Inclui borda e padding na largura total */
+    z-index: 1000;                  /* Garante que o título esteja acima dos outros elementos */
+}
+
+/* Navegação centralizada */
+#navegacao ul {
+    list-style-type: none;          /* Remove marcadores de lista */
+    margin: 0;                      /* Remove margem */
+    padding: 0;                     /* Remove espaçamento */
+    display: flex;                  /* Alinha os itens em linha */
+    justify-content: center;        /* Centraliza itens na navegação */
+    background-color: black;        /* Fundo preto para barra de navegação */
+    position: fixed;                /* Fixa barra de navegação no topo */
+    top: 60px;                      /* Posição abaixo do título */
+    width: 100%;                    /* Largura total */
+}
+
+#navegacao li {
+    margin: 0 15px;                 /* Espaçamento entre itens da navegação */
+}
+
+#navegacao a {
+    color: white;                   /* Cor branca para texto dos links */
+    text-decoration: none;          /* Remove sublinhado dos links */
+    font-weight: bold;              /* Texto em negrito */
+    padding: 14px 20px;             /* Espaçamento interno dos links */
+    display: block;                 /* Exibe links como blocos */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição */
+}
+
+#navegacao a:hover {
+    background-color: white;        /* Cor de fundo ao passar o mouse */
+    color: black;                   /* Cor do texto ao passar o mouse */
+}
+
+/* Seções principais */
+.section {
+    padding: 20px;                  /* Espaçamento interno das seções */
+    max-width: 800px;               /* Largura máxima da seção */
+    margin: auto;                   /* Centraliza as seções */
+    border-bottom: 2px solid black; /* Linha de separação entre seções */
+    margin-bottom: 20px;            /* Espaço inferior após cada seção */
+}
+
+/* Remoção de borda inferior em seções específicas */
+#Competencias, #Inform, #percurso, #portfolio, #act, #cert, #cur {
+    border-bottom: none;            /* Remove linha inferior */
+}
+
+/* Estilo para subtítulos das seções */
+h2 {
+    color: black;                   /* Cor preta para subtítulos */
+    border-bottom: 2px solid black; /* Linha inferior preta para destaque */
+    padding-bottom: 8px;            /* Espaço inferior no subtítulo */
+}
+
+/* Estilo para imagens icônicas */
+.icon {
+    width: 23px;                    /* Largura das imagens */
+    height: 23px;                   /* Altura das imagens */
+    margin-right: 8px;              /* Espaçamento à direita */
+    vertical-align: middle;         /* Alinhamento vertical ao meio */
+}
+
+/* Rodapé em duas colunas */
+footer {
+    background-color: black;        /* Fundo preto */
+    color: white;                   /* Texto branco */
+    padding: 40px 20px;             /* Espaçamento interno */
+    display: flex;                  /* Exibe rodapé em flex */
+    justify-content: center;        /* Centraliza o rodapé */
+}
+
+.footer-container {
+    display: flex;                  /* Flexbox para organização em colunas */
+    justify-content: space-between; /* Espaçamento entre colunas */
+    max-width: 1000px;              /* Largura máxima do rodapé */
+    width: 100%;                    /* Largura total */
+    gap: 40px;                      /* Espaço entre colunas */
+}
+
+/* Colunas no rodapé */
+.footer-section {
+    flex: 1;                        /* Define cada coluna com mesma proporção */
+    padding: 0 20px;                /* Espaçamento interno lateral */
+}
+
+.footer-section h3 {
+    font-size: 1.5em;               /* Tamanho do título das colunas */
+    color: white;                   /* Cor branca para títulos */
+    margin-bottom: 10px;            /* Espaço inferior */
+    border-bottom: 2px solid grey;  /* Linha inferior para destaque */
+    padding-bottom: 8px;            /* Espaço inferior no título */
+}
+
+.footer-section ul {
+    list-style: none;               /* Remove marcadores */
+    padding: 0;                     /* Remove espaçamento interno */
+}
+
+.footer-section li {
+    font-size: 1em;                 /* Tamanho do texto nos itens */
+    margin: 10px 0;                 /* Espaço entre os itens */
+    display: flex;                  /* Flexbox para itens */
+    align-items: center;            /* Alinha ao centro verticalmente */
+}
+
+/* Links e ícones do rodapé */
+.footer-section a {
+    color: white;                 /* Cor azul claro para links */
+    text-decoration: none;          /* Remove sublinhado dos links */
+}
+
+.footer-section a:hover {
+    text-decoration: underline;     /* Sublinha links ao passar o mouse */
+}
+
+.footer-section img {
+    margin-right: 8px;              /* Espaço à direita do ícone */
+    width: 20px;                    /* Largura do ícone */
+    height: 20px;                   /* Altura do ícone */
+}
+
+/* Estilo para links e ícones de redes sociais no rodapé */
+.social-icons li a, .social-icons li {
+    display: inline-flex;           /* Exibe itens em linha */
+    align-items: center;            /* Alinha ao centro verticalmente */
+}
